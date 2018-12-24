@@ -1,3 +1,4 @@
+import {Campaigns} from './campaigns.model';
 import {model, property, Entity} from '@loopback/repository';
 
 @model()
@@ -32,7 +33,7 @@ export class Customers extends Entity {
     type: 'array',
     itemType: 'object',
   })
-  campaigns?: object[];
+  campaigns?: Campaigns[];
 
   constructor(data?: Partial<Customers>) {
     super(data);
