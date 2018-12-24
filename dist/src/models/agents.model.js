@@ -28,7 +28,29 @@ __decorate([
         type: 'string',
     }),
     __metadata("design:type", String)
-], Agents.prototype, "name", void 0);
+], Agents.prototype, "firstName", void 0);
+__decorate([
+    repository_1.property({
+        type: 'string',
+    }),
+    __metadata("design:type", String)
+], Agents.prototype, "lastName", void 0);
+__decorate([
+    repository_1.property({ type: 'string' }),
+    __metadata("design:type", String)
+], Agents.prototype, "UID", void 0);
+__decorate([
+    repository_1.property({ type: Date }),
+    __metadata("design:type", Date)
+], Agents.prototype, "created", void 0);
+__decorate([
+    repository_1.property({ type: 'string' }),
+    __metadata("design:type", String)
+], Agents.prototype, "email", void 0);
+__decorate([
+    repository_1.property({ type: 'boolean' }),
+    __metadata("design:type", Boolean)
+], Agents.prototype, "active", void 0);
 Agents = __decorate([
     repository_1.model(),
     __metadata("design:paramtypes", [Object])
